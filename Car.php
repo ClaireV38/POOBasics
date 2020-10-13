@@ -34,6 +34,13 @@ class Car
     {
         return $this->currentSpeed;
     }
+    
+    public function setCurrentSpeed(int $currentSpeed): void
+    {
+        if ($currentSpeed >= 0) {
+            $this->currentSpeed = $currentSpeed;
+        }
+    }
 
 	  /**
 	  * @var string
