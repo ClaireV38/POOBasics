@@ -16,7 +16,7 @@ class Car
         return $this->nbWheels;
     }
     /**
-     * @param string $color
+     * @param integer
      */
     public function setNbWheels(int $nbWheels) : void
     {
@@ -66,7 +66,6 @@ class Car
         return $this->nbSeats;
     }
 
-
 	  /**
 	  * @var string
 	  */
@@ -91,7 +90,7 @@ class Car
         return $this->energyLevel;
     }
     /**
-     * @param string $color
+     * @param integer
      */
     public function setEnergyLevel(int $energyLevel) : void
     {
