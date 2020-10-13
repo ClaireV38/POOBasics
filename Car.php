@@ -18,7 +18,7 @@ class Car
     /**
      * @param integer
      */
-    public function setNbWheels(int $nbWheels) : void
+    public function setNbWheels(int $nbWheels): void
     {
         $this->nbWheels = $nbWheels;
     }
@@ -34,7 +34,7 @@ class Car
     {
         return $this->currentSpeed;
     }
-    
+
     public function setCurrentSpeed(int $currentSpeed): void
     {
         if ($currentSpeed >= 0) {
@@ -56,7 +56,7 @@ class Car
     /**
      * @param string $color
      */
-    public function setColor(string $color) : void
+    public function setColor(string $color): void
     {
         $this->color = $color;
     }
@@ -99,9 +99,11 @@ class Car
     /**
      * @param integer
      */
-    public function setEnergyLevel(int $energyLevel) : void
+    public function setEnergyLevel(int $energyLevel): void
     {
-        $this->energyLevel = $energyLevel;
+        if ($energyLevel >= 0) {
+            $this->energyLevel = $energyLevel;
+        }
     }
 
 	  /**
