@@ -118,7 +118,7 @@ class Car
 	    $this->energy = $energy;
 	}
 
-	public function start()
+	public function start(): string
     {
         $sentence = "";
 	    if ($this->energyLevel > 0) {
